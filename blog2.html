@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Protest+Riot:regular" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Protest+Revolution:regular" rel="stylesheet" />
+<title>Blog-2</title>
+<style>
+    .comment {
+        margin-bottom: 20px;
+    }
+    .like-button {
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+    }
+</style>
+</head>
+<body>
+
+    <a href = "index.html" style = "font-family: Protest Revolution; text-decoration: none; font-size: 1.5em; color: rgb(112, 101, 101);">GO BACK</a>
+<br><br>
+<div class="header" style = "font-size: 4.5em; font-family: Protest Riot;">
+    Exploring India's Vibrant Tapestry</div>
+
+<p style = "font-family: Protest Riot; font-size: 2.5em;">India, a land of diversity and contrasts, captivates the imagination with its rich history, cultural heritage, and breathtaking landscapes. From the snow-capped peaks of the Himalayas to the sun-kissed beaches of Goa, India offers a kaleidoscope of experiences that leave visitors awe-inspired. With its bustling cities, ancient temples, and serene countryside, India beckons travelers from around the globe to embark on a journey of discovery and adventure..</p>
+<br><br>
+<p  style = "font-family: Protest Riot; font-size: 2.5em;">At the heart of India's allure lies its vibrant cultural tapestry, woven together by centuries of tradition and innovation. From the majestic forts of Rajasthan to the intricate temples of Tamil Nadu, each region boasts its own unique customs, cuisine, and architectural marvels. Festivals like Diwali, Holi, and Eid bring communities together in a riot of colors and celebrations, showcasing India's spirit of unity in diversity. The country's rich artistic heritage, encompassing dance, music, and literature, continues to inspire and captivate audiences worldwide.</p>
+
+<p  style = "font-family: Protest Riot; font-size: 2.5em;">In recent decades, India has emerged as a global economic powerhouse, driving innovation and growth in sectors ranging from technology to healthcare. Cities like Bangalore, often referred to as the Silicon Valley of India, have become hubs of technological innovation, attracting talent and investment from across the globe. India's ambitious space program, exemplified by organizations like ISRO (Indian Space Research Organisation), has made significant strides, with missions like Chandrayaan and Mangalyaan capturing the world's attention. As the world's largest democracy, India stands poised to play a pivotal role in shaping the future of the global economy and addressing pressing global challenges.</p>
+
+
+<div id="like-section">
+    <button id="like-button" class="like-button" onclick="toggleLike()" style = "background-color: beige; width: 7%; height: 40px;" >Like</button>
+    <span id="like-count">0</span> Likes
+</div>
+<br><br><br>
+<h1>Comments</h1>
+<br>
+<h2>Comment by _Elon Musk_</h2>
+<textarea name="comments" id="comments" cols="80" rows="5"">
+India, a beacon of ingenuity and potential, poised to lead humanity towards a sustainable future! 🌍🚀</textarea>
+<br>
+<h2>Comment by _Joe Biden_</h2>
+<textarea name="comments" id="comments" cols="80" rows="5"">
+From the bustling streets of Mumbai to the tranquil backwaters of Kerala, India's beauty and diversity never cease to amaze. Here's to the enduring friendship between our nations! 🇮🇳🇺🇸</textarea>
+<!-- <div class="comments">
+    <h1>Comments</h1>
+    <h2>Comment by _kushal_</h2>
+    <p style = "margin-left: 2%; font-size: 1.3em;">Yes I have studied in IIIT-hyderabad, and I can vouch for its excellence</p>
+
+    <h2>Comment by _Elon Musk_</h2>
+    <p style = "margin-left: 2%; font-size: 1.3em;">IIIT-H is oe of the most amazing colleges I have ever seen.</p> -->
+
+<!-- </div> -->
+
+<script>
+    let liked = false;
+    let likeCount = 0;
+
+    function toggleLike() {
+        liked = !liked;
+        if (liked) {
+            likeCount++;
+            document.getElementById('like-button').style.color = 'blue';
+        } else {
+            likeCount--;
+            document.getElementById('like-button').style.color = 'black';
+        }
+        document.getElementById('like-count').innerText = likeCount;
+    }
+</script>
+
+</body>
+</html>

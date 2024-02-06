@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Protest+Riot:regular" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Protest+Revolution:regular" rel="stylesheet" />
+<title>Blog-1</title>
+<style>
+    .comment {
+        margin-bottom: 20px;
+    }
+    .like-button {
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+    }
+</style>
+</head>
+<body>
+
+    <a href = "index.html" style = "font-family: Protest Revolution; text-decoration: none; font-size: 1.5em; color: rgb(112, 101, 101);">GO BACK</a>
+<br><br>
+<div class="header" style = "font-size: 4.5em; font-family: Protest Riot;">IIIT-Hyderabad</div>
+
+<p style = "font-family: Protest Riot; font-size: 2.5em;">Situated in the heart of Hyderabad's technology hub, the International Institute of Information Technology, Hyderabad (IIIT-Hyderabad), is a premier institute for higher education in Information Technology and Computer Science. Established in 1998, IIIT-Hyderabad has grown into one of India's leading research and teaching institutions. With its innovative curriculum, world-class faculty, and state-of-the-art infrastructure, IIIT-Hyderabad continues to nurture the brightest minds in technology and contribute significantly to research and development in the global IT industry..</p>
+<br><br>
+<p  style = "font-family: Protest Riot; font-size: 2.5em;">The institute offers undergraduate, postgraduate, and doctoral programs, preparing students to tackle real-world challenges and innovate in their respective fields. IIIT-Hyderabad's research-driven approach and interdisciplinary focus ensure academic excellence and foster a conducive environment for exploration and discovery. The vibrant campus life, enriched with cultural, sports, and extracurricular activities, complements the rigorous academic program, providing students with ample opportunities for personal and professional growth. Through its global collaborations and industry partnerships, IIIT-Hyderabad enjoys global recognition as a center of excellence in technology and innovation.</p>
+
+<div id="like-section">
+    <button id="like-button" class="like-button" onclick="toggleLike()" style = "background-color: beige; width: 7%; height: 40px;" >Like</button>
+    <span id="like-count">0</span> Likes
+</div>
+<br><br><br>
+<h1>Comments</h1>
+<br>
+<h2>Comment by _kushal_</h2>
+<textarea name="comments" id="comments" cols="80" rows="5"">
+Yes I have studied in IIIT-hyderabad, and I can vouch for its excellence
+</textarea>
+<br>
+<h2>Comment by _Elon Musk_</h2>
+<textarea name="comments" id="comments" cols="80" rows="5"">
+IIIT Hyderabad: A beacon of innovation illuminating the path to a brighter technological future! 💡
+</textarea>
+<!-- <div class="comments">
+    <h1>Comments</h1>
+    <h2>Comment by _kushal_</h2>
+    <p style = "margin-left: 2%; font-size: 1.3em;">Yes I have studied in IIIT-hyderabad, and I can vouch for its excellence</p>
+
+    <h2>Comment by _Elon Musk_</h2>
+    <p style = "margin-left: 2%; font-size: 1.3em;">IIIT-H is oe of the most amazing colleges I have ever seen.</p> -->
+
+<!-- </div> -->
+
+<script>
+    let liked = false;
+    let likeCount = 0;
+
+    function toggleLike() {
+        liked = !liked;
+        if (liked) {
+            likeCount++;
+            document.getElementById('like-button').style.color = 'blue';
+        } else {
+            likeCount--;
+            document.getElementById('like-button').style.color = 'black';
+        }
+        document.getElementById('like-count').innerText = likeCount;
+    }
+</script>
+
+</body>
+</html>
